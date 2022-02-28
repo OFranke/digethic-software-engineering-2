@@ -24,7 +24,6 @@ regressor = LinearRegression()
 regressor = regressor.fit(x_train, y_train)
 
 y_pred = regressor.predict(x_test)
-print(y_pred)
 
 file_to_write = open("data/models/baummethoden_lr.pickle", "wb")
 pickle.dump(regressor, file_to_write)
